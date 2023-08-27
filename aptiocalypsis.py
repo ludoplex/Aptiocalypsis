@@ -331,7 +331,7 @@ def main():
 
     global cs
 
-    print('Selected BIOS version is %s' % BIOS_VER)    
+    print(f'Selected BIOS version is {BIOS_VER}')    
 
     if len(sys.argv) < 2:    
 
@@ -357,7 +357,7 @@ def main():
 
         # allocate temporary destination buffer for memcpy() call
         buff_addr = cs.mem_alloc('foobar', dump_size)
-        
+
         print('Physical memory for temporary read buffer allocated at 0x%.8x' % buff_addr)
         print('SMM memcpy() address is 0x%.8x' % MEMCPY_ADDR)
 
